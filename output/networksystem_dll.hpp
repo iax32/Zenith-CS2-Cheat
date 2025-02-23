@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-08-25 08:13:46.872145900 UTC
+// 2025-02-23 17:16:43.275404900 UTC
 
 #pragma once
 
@@ -14,7 +14,7 @@ namespace cs2_dumper {
             // Parent: None
             // Field count: 1
             namespace ChangeAccessorFieldPathIndex_t {
-                constexpr std::ptrdiff_t m_Value = 0x0; // 
+                constexpr std::ptrdiff_t m_Value = 0x0; // int32
             }
         }
     }
