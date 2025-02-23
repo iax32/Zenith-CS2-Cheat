@@ -12,6 +12,10 @@ GLuint fontBase;
 
 std::mutex dataMutex;
 
+extern int width = 0;
+extern int height = 0;
+
+
 void AimbotLoop(Vec2& ScreenPosition) {
     while (true) {
         GetPlayer();
@@ -46,8 +50,8 @@ int Start() {
         return -1;
     }
 
-    int width = videoMode->width;
-    int height = videoMode->height;
+    width = videoMode->width;
+    height = videoMode->height;
 
     DWORD procId = GetProcId(L"cs2.exe");
     hProc = OpenProcess(PROCESS_ALL_ACCESS, 0, procId);

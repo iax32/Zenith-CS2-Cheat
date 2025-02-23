@@ -245,7 +245,7 @@ void RenderEntities() {
 
 // Function to handle aiming at enemies when the left mouse button is pressed.
 void Aim(Vec2& ScreenPosition) {
-    if (GetAsyncKeyState(VK_LBUTTON) & 0x8000) { // If the left mouse button is pressed:
+    if (GetAsyncKeyState(VK_SHIFT) & 0x8000) { // If the left mouse button is pressed:
         Vec2 Angles; // Initialize a vector to store the angles.
         Vec2 newAngles = Angles; // Store the original angles in newAngles.
         AimAtClosestEnemy(ScreenPosition, newAngles); // Adjust newAngles to aim at the closest enemy.
@@ -265,7 +265,7 @@ void Aim(Vec2& ScreenPosition) {
 
 // Function to handle aimlock when the ALT key is pressed.
 void Aimlock(Vec2& ScreenPosition) {
-    if (GetAsyncKeyState(VK_MENU) & 0x8000) { // If the ALT key is pressed:
+    if (GetAsyncKeyState(VK_SHIFT) & 0x8000) { // If the ALT key is pressed:
         Vec2 Angles; // Initialize a vector to store the angles.
         Vec2 newAngles = Angles; // Store the original angles in newAngles.
         AimAtClosestEnemy(ScreenPosition, newAngles); // Adjust newAngles to aim at the closest enemy.

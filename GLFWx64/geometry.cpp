@@ -1,6 +1,10 @@
 #include "geometry.h"
 #include <iostream>
 
+
+extern int width;
+extern int height;
+
 bool WorldToScreenEsp(const Vec3 VecOrigin, Vec2& VecScreen, const float* Matrix) {
     Vec4 clipCoords = {};
 
@@ -41,9 +45,6 @@ bool WorldToScreenAimbot(const Vec3 VecOrigin, Vec2& VecScreen, const float* Mat
     NDC.Y = clipCoords.Y / clipCoords.W;
     NDC.Z = clipCoords.Z / clipCoords.W;
 
-
-    float width = 1920;
-    float height = 1080;
 
     // Convert NDC to screen coordinates
     VecScreen.X = (width / 2 * NDC.X) + (NDC.X + width / 2);
