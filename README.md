@@ -43,7 +43,6 @@ We welcome and appreciate contributions to improve this Counter-Strike 2 Legit C
 **Credits:**
 - [Guided Hacking](https://guidedhacking.com/)
 - [CS2 Dumper](https://github.com/a2x/cs2-dumper)
-- [Asver](https://www.youtube.com/watch?v=UCkVfZCFXp8)
 
 **Notes:**
 - There is potential for improvement in this cheat. It is currently released with basic functionality.
